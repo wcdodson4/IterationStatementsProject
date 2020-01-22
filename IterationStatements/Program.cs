@@ -34,11 +34,20 @@ namespace IterationStatements
                 // Increment your variable by 1
                 // Then add your variable to "numbers"
             }
+            while (i < 200)
+            {
+                i++;
+                numbers.Add(i);
+            }
 
             Console.WriteLine("Increase:");
 
             // Create a foreach loop
             // Write your variable to the console
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
 
             Console.WriteLine("");
             Console.WriteLine("Decrease:");
@@ -50,6 +59,10 @@ namespace IterationStatements
             // Decrement i by 1
             {
                 // Write to the console "numbers" at index i
+            }
+            for(var x = 199; x <= numbers.Count && x >= 0; x--)
+            {
+                Console.WriteLine(numbers[x]);
             }
         }
     }
